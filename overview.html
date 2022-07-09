@@ -1,42 +1,18 @@
 <!DOCTYPE html>
 <html>
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                /*remove the attribute, and call this function once more:*/
-                elmnt.removeAttribute("w3-include-html");
-                includeHTML();
-            }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-        }
-        }
-    };
-</script>
+
 <head>
     <meta charset="utf-8" />
     <title>Overview Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_nav.css">
+    <link rel="stylesheet" href="styles_footer.css">
+    <script type=module src=meta_content/nav_html.js></script>
+    <script type=module src=meta_content/footer_html.js></script>
 </head>
 <body>
     <header>
-        <div w3-include-html='page_header.html'></div>
+        <header-nav></header-nav>
     </header>
 
     <section>
@@ -141,30 +117,9 @@
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <div class="footer-table">
-                    updated June 2022 &emsp;|
-                </div>
-                <div class="footer-table">
-                    <a href="https://www.linkedin.com/in/isaacspackman"> 
-                        www.linkedin.com/in/isaacspackman
-                    </a>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="footer-table">
-                    <img onclick="location.href='https://www.linkedin.com/in/isaacspackman';", style="cursor: pointer;", class="footer-img" src="images/linkedinlogo.png"alt="linkedinlogo">
-                </div>
-                <div class="footer-table">
-                    <img class="footer-img" src="images/pnnlgreenlogo.png"alt="PNNL sustainability">
-                </div>
-            </div>
-        </div>
+        <my-footer></my-footer>
     </footer>
-<script>
-    includeHTML();
-</script>
+
 </body>
 
 </html>
