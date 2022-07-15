@@ -1,0 +1,7 @@
+IDEAS
+
+have some sort of comprehensive list of all the cool instruments/instrumentation somewhere
+beyond just what I think I can build
+
+use a UV/vis set up with food dye to assess NMF deconvolution of mixed peaks
+(possibly use autotitrator for calibration/training set?)

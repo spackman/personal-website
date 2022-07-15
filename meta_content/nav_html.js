@@ -7,7 +7,7 @@ class HeaderNav extends HTMLElement {
                     <a href="overview.html">Overview  </a>
                 </li>
                 <li>
-                    <a href="climate&energy.html">Climate & Energy  </a>
+                    <a href="climate_energy.html">Climate & Energy  </a>
                     <div class="drop-down">
                         <div class="nav-column">
                             <h3>Climate Modeling</h3>
@@ -63,6 +63,7 @@ class HeaderNav extends HTMLElement {
                             <ul>
                                 <li><a href="#">Visible Microscopy</a></li>
                                 <li><a href="#">Confocal Microscopy</a></li>
+                                <li><a href="#">SEM/TEM</a></li>
                             </ul>
         
                             <h3>Separations</h3>
@@ -91,6 +92,10 @@ class HeaderNav extends HTMLElement {
                                 <li><a href="#">Nodal Geophone</a></li>
                                 <li><a href="#">Turbidimeter</a></li>
                                 <li><a href="#">Radio Telescope</a></li>
+                                <li><a href="#">aspirational</a></li>
+                                <li><a href="#">SEM/TEM</a></li>
+                                <li><a href="#">EIS, XRF, XRD, EDS, TGA, DSC</a></li>
+                                <li><a href="#">nano and micro CT</a></li>
                             </ul>
                         </div>
                     </div>
