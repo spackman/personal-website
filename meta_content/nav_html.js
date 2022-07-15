@@ -1,5 +1,3 @@
-alert('the page read the javascript');
-
 class HeaderNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -376,5 +374,3 @@ class HeaderNav extends HTMLElement {
 };
 
 customElements.define('header-nav', HeaderNav);
-
-alert('the page read the javascript2');

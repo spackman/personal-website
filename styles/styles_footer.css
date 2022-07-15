@@ -2,7 +2,7 @@
 footer {
     background: black;
     color: white;
-    background-image: url("images/footer.jpg");
+    background-image: url("../images/footer.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin: auto;
