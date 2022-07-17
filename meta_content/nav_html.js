@@ -4,7 +4,7 @@ class HeaderNav extends HTMLElement {
         <nav>
             <ul class="gnav">
                 <li>
-                    <a href="overview.html">Overview  </a>
+                    <a href="index.html">Overview  </a>
                 </li>
                 <li>
                     <a href="climate_energy.html">Climate & Energy  </a>

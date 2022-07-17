@@ -76,7 +76,7 @@ section > .lower-section {
 
 .lower-container > .right {
     background: transparent;
-    padding: 15px;
+    padding: 10px;
     margin:auto; /*evenly spaces items within lower section*/
 }
 
@@ -112,7 +112,14 @@ section > .lower-section {
     box-shadow: 0 0 0 5px darkgreen inset;   
     border-radius: 20px; 
     background: white;
+}
 
+.btm-img-icon {
+    width: 140px;
+    border: 5px solid darkgreen;
+    box-shadow: 0 0 0 0px darkgreen inset;   
+    border-radius: 20px; 
+    background: white;
 }
 
 
